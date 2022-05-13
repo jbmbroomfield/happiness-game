@@ -1,8 +1,8 @@
 <script>
-  import Map from "./Map.svelte";
+  import Game from "./Game.svelte";
 </script>
 
-<Map />
+<Game />
 
 <style global lang="postcss">
   @tailwind base;

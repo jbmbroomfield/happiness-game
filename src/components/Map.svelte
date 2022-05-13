@@ -1,35 +1,19 @@
 <script>
-  import Icon from "./icons/Icon.svelte";
   import MapObject from "../javascript/MapObject.js";
-
-  const mo = new MapObject({
-    location: [2, 5],
-    icon: "apple",
-    color: "purple-400",
-  });
-
-  console.log("mo", mo);
-  console.log("all", MapObject.all);
+  import MapIcon from "./MapIcon.svelte";
 
   export let cellSize = 32;
   export let width = 40;
   export let height = 25;
+
+  let objects = MapObject.all;
 </script>
 
 <div
-  class="map bg-gray-300 absolute"
+  class="rounded bg-gray-200 absolute"
   style="width: {cellSize * width}px; height: {cellSize * height}px"
 >
-  <div class="absolute" style="left: 0px; top: 0px">
-    <Icon name="apple" class="text-red-400" />
-  </div>
-  <div class="absolute" style="left: 0px; top: 32px">
-    <Icon name="apple" class="text-red-400" />
-  </div>
-  <div class="absolute" style="left: 32px; top: 0px">
-    <Icon name="apple" class="text-red-400" />
-  </div>
-  <div class="absolute" style="left: 32px; top: 32px">
-    <Icon name="apple" class="text-red-400" />
-  </div>
+  {#each objects as object}
+    <MapIcon {object} />
+  {/each}
 </div>
