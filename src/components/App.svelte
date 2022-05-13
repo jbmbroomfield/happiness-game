@@ -1,10 +1,8 @@
 <script>
-  import Icon from "./icons/Icon.svelte";
+  import Map from "./Map.svelte";
 </script>
 
-<main>
-  <Icon name="apple" class="text-red-400" />
-</main>
+<Map />
 
 <style global lang="postcss">
   @tailwind base;
