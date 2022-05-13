@@ -1,9 +1,6 @@
-<script>
-</script>
+<script></script>
 
-<main>
-  <button class="btn btn-primary">daisyUI Button</button>
-</main>
+<main>APP</main>
 
 <style global lang="postcss">
   @tailwind base;
