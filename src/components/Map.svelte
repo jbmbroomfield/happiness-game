@@ -1,5 +1,15 @@
 <script>
   import Icon from "./icons/Icon.svelte";
+  import MapObject from "../javascript/MapObject.js";
+
+  const mo = new MapObject({
+    location: [2, 5],
+    icon: "apple",
+    color: "purple-400",
+  });
+
+  console.log("mo", mo);
+  console.log("all", MapObject.all);
 
   export let cellSize = 32;
   export let width = 40;
