@@ -5,8 +5,18 @@ class MapObject {
     this.location = location
     this.icon = icon
     this.color = `text-${color}`
-    console.log('hi')
+    this.hidden = false
     MapObject.all.push(this)
+  }
+
+  hide() {
+    this.hidden = true
+    MapObject.all = MapObject.all
+  }
+
+  unhide() {
+    this.hidden = false
+    MapObject.all = MapObject.all
   }
 
 }

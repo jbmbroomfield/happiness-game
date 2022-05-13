@@ -29,13 +29,20 @@
     color: "red-900",
   });
 
-  new MapObject({
+  const face = new MapObject({
     location: [10, 10],
     icon: "faceHappy",
     color: "yellow-400",
   });
 
   console.log("all", MapObject.all);
+  setInterval(() => {
+    console.log("hiding");
+    face.hide();
+  }, 3000);
+  setInterval(() => {
+    face.unhide();
+  }, 6000);
 </script>
 
 <Map objects={mapObjects} />
