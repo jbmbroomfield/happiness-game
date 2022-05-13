@@ -29,6 +29,12 @@
     color: "red-900",
   });
 
+  new MapObject({
+    location: [10, 10],
+    icon: "faceHappy",
+    color: "yellow-400",
+  });
+
   console.log("all", MapObject.all);
 </script>
 
