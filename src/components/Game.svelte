@@ -23,7 +23,13 @@
     color: "green-500",
   });
 
+  new MapObject({
+    location: [20, 20],
+    icon: "house",
+    color: "red-900",
+  });
+
   console.log("all", MapObject.all);
 </script>
 
-<Map obects={mapObjects} />
+<Map objects={mapObjects} />

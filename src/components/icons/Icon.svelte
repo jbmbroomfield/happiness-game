@@ -1,5 +1,6 @@
 <script>
   import Apple from "./Apple.svelte";
+  import House from "./House.svelte";
 
   export let name;
 
@@ -7,6 +8,7 @@
 
   const IconComponent = {
     apple: Apple,
+    house: House,
   }[name];
 </script>
 
