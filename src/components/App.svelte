@@ -1,6 +1,10 @@
-<script></script>
+<script>
+  import Icon from "./icons/Icon.svelte";
+</script>
 
-<main>APP</main>
+<main>
+  <Icon name="apple" class="text-red-400" />
+</main>
 
 <style global lang="postcss">
   @tailwind base;
